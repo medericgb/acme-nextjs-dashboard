@@ -11,6 +11,11 @@ import Link from 'next/link';
 import { Button } from '@/app/ui/button';
 import { updateInvoice } from '@/app/lib/actions';
 import { useFormState } from 'react-dom';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Edit Invoice',
+}
 
 export default function EditInvoiceForm({
   invoice,
